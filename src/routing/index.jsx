@@ -2,8 +2,7 @@ import { Route, Routes } from "react-router";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact/";
-import ContextPage from "../pages/ContextPage";
-
+import ObjectPage from "../pages/ObjectPage";
 
 const Routing = () => {
   return (
@@ -12,8 +11,7 @@ const Routing = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/context" element={<ContextPage />} />
-
+        <Route path="/context" element={<ObjectPage />} />
       </Routes>
     </>
   );

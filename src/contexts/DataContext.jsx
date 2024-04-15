@@ -2,14 +2,14 @@ import { createContext } from "react";
 
 export const DataContext = createContext("");
 
-import React from "react";
-
+const obj = {
+  ad: "Ali",
+  yas: 27,
+};
 const DataContextProvider = ({ children }) => {
   return (
     <>
-      <DataContext.Provider value="Ruslanin Datasi">
-        {children}
-      </DataContext.Provider>
+      <DataContext.Provider value={obj}>{children}</DataContext.Provider>
     </>
   );
 };
